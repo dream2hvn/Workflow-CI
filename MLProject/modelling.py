@@ -5,13 +5,6 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
-import argparse
-import mlflow
-import mlflow.sklearn
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-
 # Argument parsing
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_path", type=str, default="diabetes_clean.csv")

@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'  # Atur versi sesuai kebutuhan Anda
+          python-version: '3.12'  # Sesuaikan versi Python
 
       - name: Install dependencies
         run: |
@@ -25,4 +25,4 @@ jobs:
           pip install mlflow scikit-learn pandas
 
       - name: Run modelling.py script
-        run: python MLProject/modelling.py
+        run: python MLProject/modelling.py --data_path diabetes_clean.csv
